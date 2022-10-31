@@ -1,0 +1,28 @@
+print("Please Sign up first")
+usermo = input("Enter a username: ")
+passmo = input("Enter a password: ")
+username = [""]
+password = [""]
+username.append(usermo)
+password.append(passmo)
+toContinue = True
+while toContinue:
+    option = int(input("1.Sign in\n"
+                       "2.Add account\n"
+                       "Enter here:"))
+    if option == 1:
+        userLog = input("Enter your username: ")
+        userPas = input("Enter your password: ")
+        for x in range(len(username)):
+            if userLog == username[x] and userPas == password[x]:
+                print("Welcome", userLog)
+                toContinue = False
+                break
+        else:
+            print("Account not Found")
+    elif option == 2:
+        user = input("Enter a username:")
+        pas = input("Enter a password:")
+        username.append(user)
+        password.append(pas)
+        print("Created Successfully")
