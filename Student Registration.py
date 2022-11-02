@@ -20,7 +20,7 @@ while True:
     learner = Student(fname,lname,myCourse,yrAndSec)
     students.append(learner)
 
-    ifContinue = int(input("Press 1 if you want to register another student while press 2 if not: "))
+    ifContinue = int(input("Press 1 if you want to register another student and press 2 if not: "))
     if ifContinue == 1:
         print()
     elif ifContinue == 2:
