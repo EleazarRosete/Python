@@ -15,7 +15,7 @@ age = int(input("How old are you? "))
 player = person.player(username, age)
 
 while True:
-    option = int(input("\n\n1.Start Being an Ranker\n2.Show Stats\n0.Quit\nYou "
+    option = int(input("\n\n1.Start Being a Ranker\n2.Show Stats\n0.Quit\nYou "
                        "will: "))
     if option == 1:
         print("\nStart earning points to rank up!")
