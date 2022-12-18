@@ -1,12 +1,12 @@
 while True:
-    print("\n\"Acronym Creator\"\n")
-    phrase = input("Enter Phrase: ")
-    word = phrase.split(" ")
-    print("- Phrase: " + phrase)
-    print("- Acronym: ", end="")
-    for x in word:
-        print(x[0].upper(), end="")
     try:
+        print("\n\"Acronym Creator\"\n")
+        phrase = input("Enter Phrase: ")
+        word = phrase.split(" ")
+        print("- Phrase: " + phrase)
+        print("- Acronym: ", end="")
+        for x in word:
+            print(x[0].upper(), end="")
         again = int(input("\n\nCreate Again?\n1.[Yes] 2.[No]\n-> "))
         if again == 1:
             pass
